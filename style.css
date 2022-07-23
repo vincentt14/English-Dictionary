@@ -1,0 +1,129 @@
+/* import font dari google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4d59fb;
+}
+
+.wrapper{
+    width: 420px;
+    background: white;
+    border-radius: .5rem;
+    padding: 28px 26px 45px;
+}
+
+.wrapper header{
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper .search{
+    position: relative;
+    margin: 35px 0 18px;
+}
+
+.search input{
+    height: 3.3rem;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    padding: 0 42px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.search input:focus{
+    padding: 0 41px;
+    border: 2px solid #4d59fb;
+}
+
+.search input::placeholder{
+    color: #b8b8b8;
+}
+
+.search :where(i, span){
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+}
+
+.search i{
+    left: 18px;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.search input:focus ~ i{
+    color: #4d59fb;
+}
+
+.search span{
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.search input:valid ~ span{
+    display: block;
+}
+
+.wrapper ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    padding-bottom: 17px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+ul li:last-child{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+ul .words p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+ul .words span{
+    font-size: .75rem;
+    color: #989898;
+}
+
+ul .words i{
+    cursor: pointer;
+    font-size: .75rem;
+    color: #999;
+}
+
+.content li .details{
+    padding-left: 10px;
+    border-radius: 4px 0 0 4px;
+    border-left: 3px solid #4d59fb;
+}
+
+.content li .details p{
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.content li .details span{
+    font-size: .9rem;
+    color: #7e7e7e;
+}
