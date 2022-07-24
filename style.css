@@ -81,6 +81,16 @@ body{
     display: block;
 }
 
+.wrapper .info-text{
+    font-size: 0.83rem;
+    color: #9a9a9a;
+    margin: -3px 0 -10px;
+}
+
+.wrapper ul{
+    display: none;
+}
+
 .wrapper ul li{
     display: flex;
     align-items: center;
@@ -126,4 +136,15 @@ ul .words i{
 .content li .details span{
     font-size: .9rem;
     color: #7e7e7e;
+}
+
+.synonyms .details .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.synonyms .details .list span{
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: underline;
 }
